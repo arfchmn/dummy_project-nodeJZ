@@ -39,7 +39,7 @@ export const register = async (req, res) => {
 
         const queryCheckEmail = `SELECT*FROM public.membership WHERE email = $1` 
         const resQueryVerif = await pool.query(queryCheckEmail, [email]);
-        if(resQueryVerif.rows.length >= 0){
+        if(resQueryVerif.rows.length = 0){
             return res.status(400).json({
                 "status": 102,
                 "message": "Email sudah terdaftar",
