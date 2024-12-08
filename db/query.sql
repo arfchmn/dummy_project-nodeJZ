@@ -16,7 +16,7 @@ CREATE TABLE IF NOT EXISTS public.membership (
     last_name VARCHAR(255),
     password VARCHAR(255) NOT NULL,
     profile_image TEXT,
-    balance INTEGER DEFAULT 0,
+    balance INTEGER DEFAULT 0
 );
 
 CREATE TABLE IF NOT EXISTS public.information_banner
